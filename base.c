@@ -41,6 +41,37 @@ void print_ids(Record records[]) {
     printf("\n");
 }
 
+void print_specific_names_information(Record records[]){
+	char inputName[20];
+	int input;
+	int inputId;
+	int len = 100;
+	printf("Pick information\n");
+	printf("1. id, 2. name ");
+	scanf("%d",&input);
+	
+	if(input = 1){
+	printf("input id: ");
+	scanf("%d",&inputId);
+	for(int i=0;i<100;i++){
+		if(records[i].id==inputId){
+		printf("%d %s\n",records[i].id, records[i].name);
+		}
+	}	
+	if(input = 2){
+        printf("input name: ");
+        scanf("%s",inputName);
+        for(int i=0;i<100;i++){
+                if(strcmp(records[i].name,inputName)==0){
+                printf("%d %s\n",records[i].id, records[i].name);
+                	}
+        	}
+
+	}
+
+
+	}
+}
 // Function: print_records()
 // Input: record - array of Records; this may contain empty elements in the middle
 // Output: none
