@@ -7,6 +7,7 @@
 void print_records(Record[]);
 void print_ids(Record[]);
 void print_names(Record[]);
+void print_specific_names_information(Record[]);
 int add_a_record(Record[], int);
 int add_file(Record[], int);
 int add_stdin(Record[], int);
